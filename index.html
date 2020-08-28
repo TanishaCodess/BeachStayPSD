@@ -4,25 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c882b61f18.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Beach Stay</title>
 </head>
 
 <body>
-    <header>
-        <span class="logo"></span>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <h1> Welcome to <span class="title">Beachstays</span></h1>
+    <header class="indexHeader">
+        <div class="wrapper">
+            <nav>
+                <span class="logo">Beachstays</span>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="titleContainer">
+                <h1 class="indexHeading"> welcome to </h1>
+                <h2 class="title">Beachstays</h2>
+            </div>
+        </div>
+        <div class="headerImgContainer">
+            <img src="./assets/header-box.jpg" alt="a pair of sunglasses on the beach">
+        </div>
     </header>
 
     <section class="about">
+        <img src="./assets/small-box.jpg" alt="a view from inside an apartment looking out onto the water">
         <h2>Visit Guyana</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquam suscipit officia dolorem. Cupiditate, dicta expedita. Minima aliquid quod nisi repudiandae eius recusandae adipisci aspernatur tempora, eveniet asperiores quasi iusto laborum
             tenetur nemo velit aperiam distinctio ex error consectetur provident blanditiis expedita magni doloremque necessitatibus. Veniam dolore obcaecati ad quasi!</p>
@@ -31,31 +42,31 @@
 
     <section class="gallery">
         <ul>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
+            <li><img src="./assets/gallery-image1.jpg" alt="a house on stilts sitting on the beach"></li>
+            <li><img src="./assets/gallery-image2.jpg" alt="a wodden cottage with light coming from its windows"></li>
+            <li><img src="./assets/gallery-image3.jpg" alt="a house with palm trees around it on the beach"></li>
         </ul>
     </section>
 
     <section class="info">
         <ul>
             <li>
-                <i></i>
+                <i class="fas fa-home"></i>
                 <h3>Beah houses</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus explicabo quasi perferendis quas atque veritatis? Aliquam, reiciendis maiores. Eos, repellat praesentium eligendi quam est officiis.</p>
             </li>
             <li>
-                <i></i>
+                <i class="fas fa-file"></i>
                 <h3>Blog</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus explicabo quasi perferendis quas atque veritatis? Aliquam, reiciendis maiores. Eos, repellat praesentium eligendi quam est officiis.</p>
             </li>
             <li>
-                <i></i>
+                <i class="fas fa-users"></i>
                 <h3>Community</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus explicabo quasi perferendis quas atque veritatis? Aliquam, reiciendis maiores. Eos, repellat praesentium eligendi quam est officiis.</p>
             </li>
             <li>
-                <i></i>
+                <i class="fas fa-phone"></i>
                 <h3>Get in Touch</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus explicabo quasi perferendis quas atque veritatis? Aliquam, reiciendis maiores. Eos, repellat praesentium eligendi quam est officiis.</p>
             </li>
@@ -64,7 +75,7 @@
 
     <section class="planLocation">
         <div class="top">
-            <img src="" alt="">
+            <img src="./assets/left-image.jpg" alt="a vacation house and a clear sky">
             <h4>Plan Ahead</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quis quasi. Tenetur vel assumenda iure molestias unde obcaecati quae veniam possimus debitis, voluptates sed ea!</p>
             <a href="" class="readMore">Read More</a>
@@ -74,10 +85,11 @@
             <h4>New Locations</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magnam adipisci sapiente eligendi atque, quasi eos excepturi molestias exercitationem esse, corrupti fugiat culpa temporibus velit!</p>
             <a href="" class="readMore">Read More</a>
-            <img src="" alt="">
+            <img src="./assets/right-image.jpg" alt="a beautiful beach with crystal blue water">
         </div>
 
-        <img src="" alt="">
+        <div class="backgroundBeach"></div>
+
     </section>
 
     <section class="freeTrip">

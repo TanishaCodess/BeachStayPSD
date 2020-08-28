@@ -2,3 +2,118 @@
 // Variables
 $SpruceGreen: #0C5F4c;
 $GreenishCyan: #50E3C2;
+$TwilightBlue: #063974;
+$LightLightBlue: #D2F9F1;
+$IceBlue: #FAFFFE;
+$Black: #2C2C2C;
+// Style Stripping and defaults
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+// img {
+//     width: 100%;
+// }
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+header {
+    height: 90vh;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+nav {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    color: $IceBlue;
+    line-height: 29px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    padding-top: 10px;
+}
+
+nav ul li {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+// Index Page, Header Section
+.indexHeader {
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .wrapper {
+        position: relative;
+    }
+    .logo {
+        font-family: 'Playfair Display SC', serif;
+        font-weight: 900;
+        font-style: italic;
+        color: $GreenishCyan;
+        font-size: 3.46rem;
+        padding-top: 10px;
+    }
+    .title {
+        font-family: 'Playfair Display SC', serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 11.12rem;
+        color: $TwilightBlue;
+    }
+    .indexHeading {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 6.2rem;
+        letter-spacing: 6.7px;
+        color: $SpruceGreen;
+    }
+    .titleContainer {
+        width: 100%;
+        height: 100%;
+        margin-top: 15%;
+        margin-left: 35%;
+        position: relative;
+        z-index: 1;
+    }
+    .headerImgContainer {
+        width: 45%;
+        position: absolute;
+        top: 25%;
+        z-index: 0;
+        min-width: 600px;
+    }
+}
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Playfair Display SC', serif;

@@ -268,3 +268,119 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+header {
+  height: 90vh;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+nav {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  color: #FAFFFE;
+  line-height: 29px;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+
+nav ul li {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.indexHeader {
+  background-image: url(../assets/home-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.indexHeader .wrapper {
+  position: relative;
+}
+
+.indexHeader .logo {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 900;
+  font-style: italic;
+  color: #50E3C2;
+  font-size: 3.46rem;
+  padding-top: 10px;
+}
+
+.indexHeader .title {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 11.12rem;
+  color: #063974;
+}
+
+.indexHeader .indexHeading {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 6.2rem;
+  letter-spacing: 6.7px;
+  color: #0C5F4c;
+}
+
+.indexHeader .titleContainer {
+  width: 100%;
+  height: 100%;
+  margin-top: 15%;
+  margin-left: 35%;
+  position: relative;
+  z-index: 1;
+}
+
+.indexHeader .headerImgContainer {
+  width: 45%;
+  position: absolute;
+  top: 25%;
+  z-index: 0;
+  min-width: 600px;
+}
