@@ -25,70 +25,87 @@
         </div>
     </header>
     <main class="blogMain">
-        <div class="wrapper">
-            <div class="leftSide">
-                <article class="blogPost">
-                    <img src="../assets/post-image.jpg" alt="a walk-up to a wodden cottage">
-                    <h4>Fice days of ocean seas</h4>
-                    <p class="dateAuthor">Monday Janurary 21th, 2019 by <span class="author">Bora</span></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium distinctio, consequatur molestias culpa quis ea harum aperiam expedita qui dolorem vero a dicta voluptatibus numquam accusamus, praesentium enim ipsam error? Possimus
-                        tempora exercitationem cupiditate dolor!</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur sint inventore! Ullam eos blanditiis, corrupti cumque possimus quaerat excepturi qui eius est architecto molestias voluptate, doloribus officiis incidunt repellat,
-                        quos velit similique explicabo? Sunt accusamus at neque ad eius rerum ipsam necessitatibus architecto totam!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam minus voluptates officia, dolor ratione inventore unde aspernatur earum incidunt provident odit ipsum mollitia ipsa necessitatibus blanditiis at alias soluta?
-                        Nemo voluptatibus harum vero laudantium nisi nostrum id, doloremque, eaque mollitia molestias quis! Similique cum saepe officia suscipit praesentium minima, ea provident deleniti iusto, ex quas sint odio id cupiditate illum tenetur
-                        repudiandae hic facere distinctio? Expedita maiores velit cum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi aspernatur doloremque ducimus, hic eos placeat, sint, minima odio illo temporibus culpa consectetur vero dolor?</p>
-                </article>
 
-                <section class="comments">
-                    <h6>Comments:</h6>
-                    <div class="postOne">
+        <div class="leftSide">
+            <article class="blogPost">
+                <img src="../assets/post-image.jpg" alt="a walk-up to a wodden cottage">
+
+                <h4>Fice days of ocean seas</h4>
+                <p class="dateAuthor">Monday Janurary 21th, 2019 by <span class="author">Bora</span></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium distinctio, consequatur molestias culpa quis ea harum aperiam expedita qui dolorem vero a dicta voluptatibus numquam accusamus, praesentium enim ipsam error? Possimus
+                    tempora exercitationem cupiditate dolor!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur sint inventore! Ullam eos blanditiis, corrupti cumque possimus quaerat excepturi qui eius est architecto molestias voluptate, doloribus officiis incidunt repellat,
+                    quos velit similique explicabo? Sunt accusamus at neque ad eius rerum ipsam necessitatibus architecto totam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam minus voluptates officia, dolor ratione inventore unde aspernatur earum incidunt provident odit ipsum mollitia ipsa necessitatibus blanditiis at alias soluta?
+                    Nemo voluptatibus harum vero laudantium nisi nostrum id, doloremque, eaque mollitia molestias quis! Similique cum saepe officia suscipit praesentium minima, ea provident deleniti iusto, ex quas sint odio id cupiditate illum tenetur
+                    repudiandae hic facere distinctio? Expedita maiores velit cum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi aspernatur doloremque ducimus, hic eos placeat, sint, minima odio illo temporibus culpa consectetur vero dolor?</p>
+            </article>
+
+            <section class="comments">
+                <h6>Comments:</h6>
+                <div class="postOne">
+                    <div class="postOneImg">
                         <img src="../assets/comment-image.jpg" alt="a headshot of a man wearing a blue shirt">
+                    </div>
+                    <div class="postOneTxt">
                         <p class="postInfo">Tuesday October 9th, 2019 by Reyansh</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo natus dolorem nisi totam provident accusamus, voluptatem repellendus facere ex dolore consectetur nesciunt, dignissimos odio distinctio. Quam, placeat iusto? Quo, animi.</p>
                     </div>
-                    <div class="postTwo">
+                </div>
+                <div class="postTwo">
+                    <div class="postTwoImg">
                         <img src="../assets/comment-image2.jpg" alt="a woman wearing sunglasses">
+                    </div>
+                    <div class="postTwoTxt">
                         <p class="postInfo">Wednesday October 10th, 2019 by Olivia</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vel earum obcaecati harum tempora at illo et, ab quidem voluptates reprehenderit consectetur delectus in? Nam?</p>
                     </div>
-                    <form class="commentForm">
-                        <input type="">
-                        <input type="">
-                        <input type="">
-                        <input type="submit">
-                    </form>
-                </section>
-            </div>
-            <div class="rightSide">
-                <section class="mission">
-                    <img src="../assets/sidebar-image.jpg" alt="a beautiful cottage on stilts on the beachfront">
-                    <h7>Our mission</h7>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate ipsa nulla?</p>
-                    <a href="">Find out more</a>
-                    <h7>Recent Posts</h7>
-                    <ul>
-                        <li>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </li>
-                        <li>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </li>
-                        <li>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </li>
-                        <li>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+                </div>
+                <form class="commentForm">
+                    <div class="topForm">
+                        <label for="userName" class="sr-only">Provide your name here.</label>
+                        <input type="text" id="userName" name="userName" placeholder="Name">
+                        <label for="email" class="sr-only">Provide your email address here.</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="bottomForm">
+                        <label for="comment" class="sr-only">Provide your comment here.</label>
+                        <textarea id="comment" name="comment" placeholder="Comment"></textarea>
+                        <button type="submit" class="postComment">Post Comment</button>
+                    </div>
+                </form>
+
+            </section>
         </div>
+        <div class="rightSide">
+            <section class="mission">
+                <img src="../assets/sidebar-image.jpg" alt="a beautiful cottage on stilts on the beachfront">
+                <h6>Our mission</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate ipsa nulla?</p>
+                <a href="" class="findMoreLink">Find out more</a>
+                <h6>Recent Posts</h6>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
     </main>
     <footer>
-        <span>Copyright ©2019 HackerYou</span>
-        <span>Made at Juno College! <a href="">Visit their webste here!</a></span>
+        <p>Copyright ©2019 HackerYou</p>
+        <p>Made at Juno College! <a href="">Visit their webste here!</a></p>
     </footer>
 </body>
 

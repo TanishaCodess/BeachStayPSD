@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/c882b61f18.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -26,10 +26,13 @@
     <main>
         <section class="contact">
             <form>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="submit">
+                <label for="contactUserName" class="sr-only">Provide your name here.</label>
+                <input type="text" id="contactUserName" name="contactUserName" placeholder="Name">
+                <label for="contactEmail" class="sr-only">Provide your email here.</label>
+                <input type="email" id="contactEmail" name="contactEmail" placeholder="Email Address">
+                <label for="contactMessage" class="sr-only">Provide your message here.</label>
+                <textarea id="contactMessage" name="contactMessage" placeholder="Message"></textarea>
+                <button type="submit" class="contactSubmit">Submit</button>
             </form>
 
             <div class="iconInfo">

@@ -22,6 +22,7 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 
 p {
@@ -52,7 +53,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     margin: 0;
 }
 
@@ -76,6 +78,54 @@ nav ul li {
     margin-left: 10px;
 }
 
+// General Form striping and styling
+form {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form input {
+    border: none;
+    border-bottom: 1px solid $GreenishCyan;
+    background-color: inherit;
+}
+
+form button {
+    border: none;
+    width: 99%;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc((100% / 2) - 15px);
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+input[type="text"] {
+    margin-right: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+form textarea {
+    border: 1px solid $GreenishCyan;
+    width: 99%;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+// end forms
 // Index Page, Header Section
 .logo {
     font-family: 'Playfair Display SC', serif;
@@ -128,7 +178,9 @@ nav ul li {
 
 // Index About Section
 .findMore,
-.readMore {
+.readMore,
+.contactSubmit,
+.postComment {
     padding: 10px;
     background-color: $TwilightBlue;
     font-family: 'Playfair Display SC', serif;
@@ -277,6 +329,10 @@ footer {
     background-color: $Black;
 }
 
+footer p {
+    margin-bottom: 0;
+}
+
 // BLOG PAGE STYLES
 // Header
 .blogHeader {
@@ -295,15 +351,102 @@ footer {
 
 // Main
 .blogMain {
-    .wrapper {
-        display: flex;
+    display: flex;
+    justify-content: space-between;
+    .leftSide {
+        width: 55%;
+        .blogPost {
+            border-bottom: 5px solid $GreenishCyan;
+            border-right: 5px solid $GreenishCyan;
+            img {
+                box-shadow: 10px 10px $GreenishCyan;
+            }
+            h4 {
+                color: $SpruceGreen;
+            }
+            .dateAuthor {
+                font-family: 'Lato', sans-serif;
+                font-size: 2rem;
+                font-weight: 400;
+                font-style: italic;
+                color: $TwilightBlue;
+                letter-spacing: 1px;
+            }
+            .author {
+                font-weight: 900;
+            }
+        }
+        .postOne Img,
+        .postTwo Img {
+            width: 100px;
+            height: 100px;
+        }
     }
-    .leftSide,
-    .rightSide {
-        width: 50%;
+    // Comment Section
+    h6 {
+        font-family: 'Lato', sans-serif;
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: $Black;
+    }
+    .comments {
+        h6 {
+            margin: 50px 0;
+        }
+        .postOne,
+        .postTwo {
+            display: flex;
+        }
+        .postOne {
+            margin-bottom: 30px;
+        }
+        .postTwo {
+            margin-bottom: 50px;
+        }
+        .postOneImg,
+        .postTwoImg {
+            margin-right: 20px;
+        }
+        .postInfo {
+            color: $TwilightBlue;
+            font-weight: 700;
+        }
+        p {
+            margin-bottom: 10px;
+        }
     }
     .rightSide {
-        align-conent: right;
+        width: 30%;
+        margin-top: 150px;
+        img {
+            margin-bottom: 15px;
+        }
+        h6 {
+            color: $TwilightBlue;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        .findMoreLink {
+            font-family: 'Lato', sans-serif;
+            font-size: 2rem;
+            line-height: 32px;
+            letter-spacing: 2px;
+            color: $SpruceGreen;
+            margin-bottom: 15px;
+        }
+        ul {
+            font-size: 2.5rem;
+        }
+        li {
+            list-style-type: disc;
+            color: $GreenishCyan;
+        }
+        li p {
+            color: $Black;
+        }
     }
 }
 
