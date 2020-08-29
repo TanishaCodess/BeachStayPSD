@@ -77,13 +77,6 @@ nav ul li {
 }
 
 // Index Page, Header Section
-header {
-    background-image: url(../assets/home-image-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .logo {
     font-family: 'Playfair Display SC', serif;
     font-weight: 900;
@@ -94,6 +87,10 @@ header {
 }
 
 .indexHeader {
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     .wrapper {
         position: relative;
     }
@@ -282,5 +279,33 @@ footer {
 
 // BLOG PAGE STYLES
 // Header
+.blogHeader {
+    background-image: url(../assets/blog-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .heading {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 8.7rem;
+        color: $IceBlue;
+        margin-top: 15%;
+    }
+}
+
+// Main
+.blogMain {
+    .wrapper {
+        display: flex;
+    }
+    .leftSide,
+    .rightSide {
+        width: 50%;
+    }
+    .rightSide {
+        align-conent: right;
+    }
+}
+
 // font-family: 'Lato', sans-serif;
 // font-family: 'Playfair Display SC', serif;

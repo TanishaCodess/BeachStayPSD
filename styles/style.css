@@ -345,13 +345,6 @@ nav ul li {
   margin-left: 10px;
 }
 
-header {
-  background-image: url(../assets/home-image-1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .logo {
   font-family: 'Playfair Display SC', serif;
   font-weight: 900;
@@ -359,6 +352,13 @@ header {
   color: #50E3C2;
   font-size: 3.46rem;
   padding-top: 10px;
+}
+
+.indexHeader {
+  background-image: url(../assets/home-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .indexHeader .wrapper {
@@ -574,4 +574,34 @@ footer {
   text-align: center;
   color: #FAFFFE;
   background-color: #2C2C2C;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blogHeader .heading {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 8.7rem;
+  color: #FAFFFE;
+  margin-top: 15%;
+}
+
+.blogMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogMain .leftSide,
+.blogMain .rightSide {
+  width: 50%;
+}
+
+.blogMain .rightSide {
+  align-conent: right;
 }
