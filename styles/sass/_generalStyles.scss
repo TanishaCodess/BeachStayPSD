@@ -1,137 +1,184 @@
-$SpruceGreen: #0C5F4c;
-$GreenishCyan: #50E3C2;
-$TwilightBlue: #063974;
-$LightLightBlue: #D2F9F1;
-$IceBlue: #FAFFFE;
-$Black: #2C2C2C;
-// Style Stripping and defaults
-html {
-    font-size: 62.5%;
-}
-
-ul {
-    margin: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-}
-
-p {
-    font-family: 'Lato', sans-serif;
-    font-size: 2rem;
-    line-height: 32px;
-    letter-spacing: 2px;
-    margin: 0 0 20px 0;
-}
-
-img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
-}
-
-header {
-    height: 75vh;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-nav {
-    font-family: 'Lato', sans-serif;
-    font-size: 2rem;
-    color: $IceBlue;
-    line-height: 29px;
-    letter-spacing: 1px;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav ul {
-    display: flex;
-    padding-top: 10px;
-}
-
-nav ul li {
-    padding: 10px;
-    margin-left: 10px;
-}
-
-nav a {
-    padding: 5px;
-}
-
-nav a:hover,
-nav a:focus {
-    background-color: $TwilightBlue;
-}
-
-// General Form striping and styling
-form {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-form fieldset {
-    border: none;
-}
-
-form input {
-    border: none;
-    border-bottom: 1px solid $GreenishCyan;
-    background-color: inherit;
-}
-
-form button {
-    border: none;
-    width: 99%;
-}
-
-input[type="text"],
-input[type="email"] {
-    width: calc((100% / 2) - 15px);
-    height: 50px;
-    margin-bottom: 30px;
-    padding: 5px;
-}
-
-input[type="text"] {
-    margin-right: 15px;
-}
-
-input::placeholder,
-textarea::placeholder {
-    font-family: 'Lato', sans-serif;
-    font-weight: lighter;
-    font-size: 2rem;
-    line-height: 32px;
-    letter-spacing: 2px;
-}
-
-form textarea {
-    border: 1px solid $GreenishCyan;
-    width: 99%;
-    height: 200px;
-    padding: 10px;
-    margin-bottom: 30px;
-    resize: none;
-}
+    $SpruceGreen: #0C5F4c;
+    $GreenishCyan: #50E3C2;
+    $TwilightBlue: #063974;
+    $LightLightBlue: #D2F9F1;
+    $IceBlue: #FAFFFE;
+    $Black: #2C2C2C;
+    // Style Stripping and defaults
+    html {
+        font-size: 62.5%;
+    }
+    
+    ul {
+        margin: 0;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+    }
+    
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        line-height: 32px;
+        letter-spacing: 2px;
+        margin: 0 0 20px 0;
+    }
+    
+    img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    header {
+        height: 75vh;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+    
+    h2 {
+        font-family: 'Lato', sans-serif;
+        font-size: 6.2rem;
+        font-weight: bold;
+        line-height: 58px;
+        letter-spacing: 3.8px;
+        color: $SpruceGreen;
+    }
+    
+    h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 58px;
+        letter-spacing: 3.2px;
+        color: $SpruceGreen;
+        margin-left: -60px;
+    }
+    
+    h4 {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 3.5rem;
+        line-height: 58px;
+        letter-spacing: 3.8px;
+        color: $TwilightBlue;
+    }
+    
+    h6 {
+        font-family: 'Lato', sans-serif;
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: $Black;
+    }
+    
+    nav {
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        color: $IceBlue;
+        line-height: 29px;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav ul {
+        display: flex;
+        padding-top: 10px;
+    }
+    
+    nav ul li {
+        padding: 10px;
+        margin-left: 10px;
+    }
+    
+    nav a {
+        padding: 5px;
+    }
+    
+    nav a:hover,
+    nav a:focus {
+        background-color: $TwilightBlue;
+    }
+    
+    // General Form striping and styling
+    form {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    form fieldset {
+        border: none;
+    }
+    
+    form input {
+        border: none;
+        border-bottom: 1px solid $GreenishCyan;
+        background-color: inherit;
+    }
+    
+    form button {
+        border: none;
+        width: 99%;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        width: calc((100% / 2) - 15px);
+        height: 50px;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    
+    input[type="text"] {
+        margin-right: 15px;
+    }
+    
+    input::placeholder,
+    textarea::placeholder {
+        font-family: 'Lato', sans-serif;
+        font-weight: lighter;
+        font-size: 2rem;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+    
+    form textarea {
+        border: 1px solid $GreenishCyan;
+        width: 99%;
+        height: 200px;
+        padding: 10px;
+        margin-bottom: 30px;
+        resize: none;
+    }
+    
+    // Footer Section
+    footer {
+        text-align: center;
+        color: $IceBlue;
+        background-color: $Black;
+    }
+    
+    footer p {
+        margin-bottom: 0;
+    }
