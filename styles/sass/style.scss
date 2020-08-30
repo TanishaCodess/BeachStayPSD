@@ -46,7 +46,7 @@ img {
 }
 
 header {
-    height: 90vh;
+    height: 75vh;
 }
 
 h1,
@@ -309,8 +309,9 @@ h4 {
 .backgroundBeach {
     background-image: url(../assets/banner-image.jpg);
     object-fit: cover;
-    height: 50vh;
+    height: 75vh;
     width: 100%;
+    background-repeat: no-repeat;
 }
 
 // Free Trip Section
@@ -335,18 +336,19 @@ footer p {
 
 // BLOG PAGE STYLES
 // Header
+.heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 8.7rem;
+    color: $IceBlue;
+    margin-top: 15%;
+}
+
 .blogHeader {
     background-image: url(../assets/blog-image-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    .heading {
-        font-family: 'Lato', sans-serif;
-        font-weight: bold;
-        font-size: 8.7rem;
-        color: $IceBlue;
-        margin-top: 15%;
-    }
 }
 
 // Main
@@ -446,6 +448,53 @@ footer p {
         }
         li p {
             color: $Black;
+        }
+    }
+}
+
+// Contact Page Styles
+// Header
+.contactHeader {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contactMain {
+    .contact {
+        display: flex;
+        margin-bottom: -20px;
+    }
+    form {
+        position: relative;
+        top: -150px;
+        box-shadow: 10px 10px $GreenishCyan;
+        padding: 50px;
+        z-index: 2;
+        background-color: $IceBlue;
+        margin: 0;
+    }
+    form,
+    .iconInfo {
+        width: 48%
+    }
+    .iconInfo {
+        padding-left: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 150px;
+        i {
+            font-size: 2rem;
+            color: $TwilightBlue;
+            padding: 5px 10px;
+        }
+        p {
+            margin-bottom: 2px;
+        }
+        .boldEmail {
+            font-weight: 900;
         }
     }
 }

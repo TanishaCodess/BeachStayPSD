@@ -309,7 +309,7 @@ img {
 }
 
 header {
-  height: 90vh;
+  height: 75vh;
 }
 
 h1,
@@ -634,8 +634,9 @@ h4 {
   background-image: url(../assets/banner-image.jpg);
   -o-object-fit: cover;
      object-fit: cover;
-  height: 50vh;
+  height: 75vh;
   width: 100%;
+  background-repeat: no-repeat;
 }
 
 .freeTrip {
@@ -657,19 +658,19 @@ footer p {
   margin-bottom: 0;
 }
 
-.blogHeader {
-  background-image: url(../assets/blog-image-1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.blogHeader .heading {
+.heading {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 8.7rem;
   color: #FAFFFE;
   margin-top: 15%;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .blogMain {
@@ -797,4 +798,63 @@ footer p {
 
 .blogMain .rightSide li p {
   color: #2C2C2C;
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contactMain .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: -20px;
+}
+
+.contactMain form {
+  position: relative;
+  top: -150px;
+  -webkit-box-shadow: 10px 10px #50E3C2;
+          box-shadow: 10px 10px #50E3C2;
+  padding: 50px;
+  z-index: 2;
+  background-color: #FAFFFE;
+  margin: 0;
+}
+
+.contactMain form,
+.contactMain .iconInfo {
+  width: 48%;
+}
+
+.contactMain .iconInfo {
+  padding-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 150px;
+}
+
+.contactMain .iconInfo i {
+  font-size: 2rem;
+  color: #063974;
+  padding: 5px 10px;
+}
+
+.contactMain .iconInfo p {
+  margin-bottom: 2px;
+}
+
+.contactMain .iconInfo .boldEmail {
+  font-weight: 900;
 }

@@ -11,46 +11,53 @@
 </head>
 
 <body>
-    <header>
-        <span class="logo"></span>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Get in Touch</h1>
+    <header class="contactHeader">
+        <div class="wrapper">
+            <span class="logo"></span>
+            <nav>
+                <span class="logo">Beachstays</span>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <h1 class="heading">Get in Touch</h1>
+        </div>
     </header>
-    <main>
-        <section class="contact">
-            <form>
-                <label for="contactUserName" class="sr-only">Provide your name here.</label>
-                <input type="text" id="contactUserName" name="contactUserName" placeholder="Name">
-                <label for="contactEmail" class="sr-only">Provide your email here.</label>
-                <input type="email" id="contactEmail" name="contactEmail" placeholder="Email Address">
-                <label for="contactMessage" class="sr-only">Provide your message here.</label>
-                <textarea id="contactMessage" name="contactMessage" placeholder="Message"></textarea>
-                <button type="submit" class="contactSubmit">Submit</button>
-            </form>
+    <main class="contactMain">
+        <div class="wrapper">
+            <section class="contact">
+                <form>
+                    <label for="contactUserName" class="sr-only">Provide your name here.</label>
+                    <input type="text" id="contactUserName" name="contactUserName" placeholder="Name">
+                    <label for="contactEmail" class="sr-only">Provide your email here.</label>
+                    <input type="email" id="contactEmail" name="contactEmail" placeholder="Email Address">
+                    <label for="contactMessage" class="sr-only">Provide your message here.</label>
+                    <textarea id="contactMessage" name="contactMessage" placeholder="Message"></textarea>
+                    <button type="submit" class="contactSubmit">Submit</button>
+                </form>
 
-            <div class="iconInfo">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-whatsapp"></i>
-                <p>info@email.com</p>
-                <p>123-456-7890</p>
-                <p>Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </div>
-        </section>
+                <div class="iconInfo">
+                    <div class="iconContainer">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <p class="boldEmail">info@email.com</p>
+                    <p>123-456-7890</p>
+                    <p>Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-        <span>Copyright ©2019 HackerYou</span>
-        <span>Made at Juno College! <a href="">Visit their webste here!</a></span>
+    <footer class="contactFooter">
+        <p>Copyright ©2019 HackerYou</p>
+        <p>Made at Juno College! <a href="">Visit their webste here!</a></p>
     </footer>
 </body>
 
