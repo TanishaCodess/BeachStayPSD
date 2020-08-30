@@ -1,4 +1,8 @@
 @import "setup";
+@import "generalStyles";
+@import "homePage";
+@import "blogPage";
+@import "contactPage";
 // Variables
 $SpruceGreen: #0C5F4c;
 $GreenishCyan: #50E3C2;
@@ -84,6 +88,10 @@ form {
     margin-bottom: 50px;
 }
 
+form fieldset {
+    border: none;
+}
+
 form input {
     border: none;
     border-bottom: 1px solid $GreenishCyan;
@@ -142,13 +150,18 @@ form textarea {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    width: 100%;
+    nav {
+        li:first-child {
+            color: $GreenishCyan;
+        }
+    }
     .title {
         font-family: 'Playfair Display SC', serif;
         font-weight: 900;
         font-style: italic;
         font-size: 11.12rem;
         color: $TwilightBlue;
+        display: inline;
     }
     .indexHeading {
         font-family: 'Lato', sans-serif;
@@ -157,6 +170,7 @@ form textarea {
         font-size: 6.2rem;
         letter-spacing: 6.7px;
         color: $SpruceGreen;
+        display: inline;
     }
     .titleContainer {
         margin-top: 15%;
@@ -385,10 +399,13 @@ footer p {
         .blogPost {
             border-bottom: 5px solid $GreenishCyan;
             border-right: 5px solid $GreenishCyan;
+            padding-right: 5px;
+            padding-bottom: 20px;
+            margin-top: -100px;
             img {
                 box-shadow: 10px 10px $GreenishCyan;
                 position: relative;
-                top: -100px;
+                top: -50px;
             }
             .articleWrapper {
                 margin-left: 10%;
@@ -406,6 +423,9 @@ footer p {
             }
             .author {
                 font-weight: 900;
+            }
+            p {
+                padding-right: 30px;
             }
         }
         .postOne Img,
@@ -432,7 +452,7 @@ footer p {
             display: flex;
         }
         .postOne {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
         .postTwo {
             margin-bottom: 50px;
@@ -449,6 +469,7 @@ footer p {
             margin-bottom: 10px;
         }
     }
+    // Right Side "Our Mission"
     .rightSide {
         width: 30%;
         margin-top: 150px;
@@ -467,6 +488,7 @@ footer p {
             font-size: 2rem;
             line-height: 32px;
             letter-spacing: 2px;
+            font-weight: 700;
             color: $SpruceGreen;
             margin-bottom: 15px;
         }
@@ -530,5 +552,153 @@ footer p {
     }
 }
 
-// font-family: 'Lato', sans-serif;
-// font-family: 'Playfair Display SC', serif;
+// Media Queiries 
+@media (max-width: 1200px) {
+    .indexHeader {
+        .titleContainer {
+            margin-top: 20%;
+            margin-left: 15%;
+        }
+    }
+    .about {
+        padding-top: 100px;
+    }
+    .planLocation {
+        padding-top: 60px;
+        .topImgContainer,
+        .bottomImgContainer {
+            position: static;
+        }
+        .bottomTxtContainer {
+            padding-top: 0;
+        }
+        .readMore {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .indexHeader {
+        .titleContainer {
+            margin-left: 0%;
+            .indexHeading {
+                font-size: 5rem;
+                color: $TwilightBlue;
+            }
+            .title {
+                font-size: 8rem;
+            }
+        }
+        .headerImgContainer {
+            display: none;
+        }
+    }
+    .about {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .aboutContainer p,
+        h2 {
+            text-align: left;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .findMore {
+            margin-bottom: 20px;
+        }
+        .aboutImgContainer {
+            width: 100%;
+        }
+    }
+    .info {
+        .topInfo,
+        .bottomInfo {
+            flex-direction: column;
+        }
+    }
+    .planLocation {
+        padding-bottom: 60px;
+        .top,
+        .bottom {
+            flex-direction: column;
+            align-items: center;
+        }
+        .topImgContainer,
+        .bottomImgContainer {
+            padding: 0;
+            margin: 0;
+        }
+        .topImgContainer {
+            margin-bottom: 20px;
+        }
+        .topTxtContainer {
+            padding: 0;
+            margin: 0;
+        }
+        .bottomTxtContainer {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about {
+        .aboutContainer {
+            padding-right: 0;
+        }
+        h2 {
+            font-size: 5rem;
+        }
+        p {
+            font-size: 1.6rem;
+            padding-right: 0;
+        }
+    }
+    .gallery ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        li {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+    .info {
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    .planLocation {
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    .freeTrip {
+        padding: 50px 0;
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .indexHeader {
+        .titleContainer {
+            .title {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+// 940, 768, 480

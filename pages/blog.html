@@ -67,18 +67,21 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vel earum obcaecati harum tempora at illo et, ab quidem voluptates reprehenderit consectetur delectus in? Nam?</p>
                     </div>
                 </div>
-                <form class="commentForm">
-                    <div class="topForm">
-                        <label for="userName" class="sr-only">Provide your name here.</label>
-                        <input type="text" id="userName" name="userName" placeholder="Name">
-                        <label for="email" class="sr-only">Provide your email address here.</label>
-                        <input type="email" id="email" name="email" placeholder="Email Address">
-                    </div>
-                    <div class="bottomForm">
-                        <label for="comment" class="sr-only">Provide your comment here.</label>
-                        <textarea id="comment" name="comment" placeholder="Comment"></textarea>
-                        <button type="submit" class="postComment">Post Comment</button>
-                    </div>
+                <form class="commentForm" action="#">
+                    <fieldset>
+                        <legend></legend>
+                        <div class="topForm">
+                            <label for="userName" class="sr-only">Provide your name here.</label>
+                            <input type="text" id="userName" name="userName" placeholder="Name">
+                            <label for="email" class="sr-only">Provide your email address here.</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="bottomForm">
+                            <label for="comment" class="sr-only">Provide your comment here.</label>
+                            <textarea id="comment" name="comment" placeholder="Comment"></textarea>
+                            <button type="submit" class="postComment">Post Comment</button>
+                        </div>
+                    </fieldset>
                 </form>
 
         </div>

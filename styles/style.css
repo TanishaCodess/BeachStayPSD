@@ -269,6 +269,10 @@ html {
   overflow: hidden;
 }
 
+ul {
+  margin: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -350,6 +354,10 @@ nav ul li {
 form {
   text-align: center;
   margin-bottom: 50px;
+}
+
+form fieldset {
+  border: none;
 }
 
 form input {
@@ -435,7 +443,10 @@ form textarea {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  width: 100%;
+}
+
+.indexHeader nav li:first-child {
+  color: #50E3C2;
 }
 
 .indexHeader .title {
@@ -444,6 +455,7 @@ form textarea {
   font-style: italic;
   font-size: 11.12rem;
   color: #063974;
+  display: inline;
 }
 
 .indexHeader .indexHeading {
@@ -453,6 +465,7 @@ form textarea {
   font-size: 6.2rem;
   letter-spacing: 6.7px;
   color: #0C5F4c;
+  display: inline;
 }
 
 .indexHeader .titleContainer {
@@ -710,13 +723,16 @@ footer p {
 .blogMain .leftSide .blogPost {
   border-bottom: 5px solid #50E3C2;
   border-right: 5px solid #50E3C2;
+  padding-right: 5px;
+  padding-bottom: 20px;
+  margin-top: -100px;
 }
 
 .blogMain .leftSide .blogPost img {
   -webkit-box-shadow: 10px 10px #50E3C2;
           box-shadow: 10px 10px #50E3C2;
   position: relative;
-  top: -100px;
+  top: -50px;
 }
 
 .blogMain .leftSide .blogPost .articleWrapper {
@@ -738,6 +754,10 @@ footer p {
 
 .blogMain .leftSide .blogPost .author {
   font-weight: 900;
+}
+
+.blogMain .leftSide .blogPost p {
+  padding-right: 30px;
 }
 
 .blogMain .leftSide .postOne Img,
@@ -770,7 +790,7 @@ footer p {
 }
 
 .blogMain .comments .postOne {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .blogMain .comments .postTwo {
@@ -814,6 +834,7 @@ footer p {
   font-size: 2rem;
   line-height: 32px;
   letter-spacing: 2px;
+  font-weight: 700;
   color: #0C5F4c;
   margin-bottom: 15px;
 }
@@ -888,4 +909,157 @@ footer p {
 
 .contactMain .iconInfo .boldEmail {
   font-weight: 900;
+}
+
+@media (max-width: 1200px) {
+  .indexHeader .titleContainer {
+    margin-top: 20%;
+    margin-left: 15%;
+  }
+  .about {
+    padding-top: 100px;
+  }
+  .planLocation {
+    padding-top: 60px;
+  }
+  .planLocation .topImgContainer,
+  .planLocation .bottomImgContainer {
+    position: static;
+  }
+  .planLocation .bottomTxtContainer {
+    padding-top: 0;
+  }
+  .planLocation .readMore {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 940px) {
+  .indexHeader .titleContainer {
+    margin-left: 0%;
+  }
+  .indexHeader .titleContainer .indexHeading {
+    font-size: 5rem;
+    color: #063974;
+  }
+  .indexHeader .titleContainer .title {
+    font-size: 8rem;
+  }
+  .indexHeader .headerImgContainer {
+    display: none;
+  }
+  .about .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .about .aboutContainer p,
+  .about h2 {
+    text-align: left;
+  }
+  .about h2 {
+    margin-bottom: 20px;
+  }
+  .about .findMore {
+    margin-bottom: 20px;
+  }
+  .about .aboutImgContainer {
+    width: 100%;
+  }
+  .info .topInfo,
+  .info .bottomInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .planLocation {
+    padding-bottom: 60px;
+  }
+  .planLocation .top,
+  .planLocation .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .planLocation .topImgContainer,
+  .planLocation .bottomImgContainer {
+    padding: 0;
+    margin: 0;
+  }
+  .planLocation .topImgContainer {
+    margin-bottom: 20px;
+  }
+  .planLocation .topTxtContainer {
+    padding: 0;
+    margin: 0;
+  }
+  .planLocation .bottomTxtContainer {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .aboutContainer {
+    padding-right: 0;
+  }
+  .about h2 {
+    font-size: 5rem;
+  }
+  .about p {
+    font-size: 1.6rem;
+    padding-right: 0;
+  }
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+  }
+  .gallery ul li {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .info p {
+    font-size: 1.6rem;
+  }
+  .planLocation p {
+    font-size: 1.6rem;
+  }
+  .freeTrip {
+    padding: 50px 0;
+  }
+  .freeTrip p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .indexHeader .titleContainer .title {
+    font-size: 5rem;
+  }
 }
