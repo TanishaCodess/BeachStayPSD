@@ -141,9 +141,8 @@ form textarea {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    .wrapper {
-        position: relative;
-    }
+    position: relative;
+    width: 100%;
     .title {
         font-family: 'Playfair Display SC', serif;
         font-weight: 900;
@@ -160,8 +159,6 @@ form textarea {
         color: $SpruceGreen;
     }
     .titleContainer {
-        width: 100%;
-        height: 100%;
         margin-top: 15%;
         margin-left: 35%;
         position: relative;
@@ -172,7 +169,7 @@ form textarea {
         position: absolute;
         top: 25%;
         z-index: 0;
-        min-width: 600px;
+        min-width: 500px;
     }
 }
 
@@ -194,7 +191,7 @@ form textarea {
 
 .about {
     background-color: $IceBlue;
-    padding: 100px 0 75px 0;
+    padding: 300px 0 75px 0;
     .wrapper {
         display: flex;
     }
@@ -221,7 +218,7 @@ form textarea {
 // Gallery Section
 .gallery {
     background-color: $LightLightBlue;
-    padding: 75px 0;
+    padding: 100px 0;
     ul {
         display: flex;
         justify-content: space-between;
@@ -233,10 +230,11 @@ form textarea {
 
 // Info Section
 .info {
-    padding: 50px 0;
+    padding: 75px 0;
     .topInfo,
     .bottomInfo {
         display: flex;
+        margin-left: 35px;
     }
     p {
         padding: 15px 30px;
@@ -271,7 +269,8 @@ h4 {
 
 .planLocation {
     background-color: $LightLightBlue;
-    padding: 50px 0;
+    // height: 140vh;
+    // padding: 50px 0;
     .top,
     .bottom {
         width: 100%;
@@ -283,33 +282,59 @@ h4 {
     .bottomTxtContainer {
         width: 50%;
     }
+    .bottomTxtContainer {
+        text-align: right;
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
     .topImgContainer {
-        padding-right: 20px;
-        padding-bottom: 20px;
+        position: relative;
+        top: -50px;
+        // padding-right: 20px;
+        // padding-bottom: 20px;
         img {
+            // width: 100%;
             box-shadow: 10px 10px;
             color: $GreenishCyan;
+            object-fit: cover;
         }
     }
     .bottomImgContainer {
-        padding-left: 20px;
-        padding-top: 20px;
+        position: relative;
+        bottom: -50px;
+        // padding-left: 20px;
+        // padding-top: 20px;
         img {
             box-shadow: -10px 10px;
             color: $GreenishCyan;
         }
     }
-    .topTxtContainer,
+    .topTxtContainer {
+        padding-right: 10%;
+        padding-left: 10px;
+        padding-top: 65px;
+    }
     .bottomTxtContainer {
-        padding-left: 20px;
+        padding-left: 10%;
+        padding-right: 10px;
+    }
+    .topImgContainer,
+    .bottomTxtContainer {
+        margin-right: 50px;
+    }
+    .topTxtContainer,
+    .bottomImgContainer {
+        margin-left: 50px;
     }
 }
 
 // Background Beach
 .backgroundBeach {
     background-image: url(../assets/banner-image.jpg);
-    object-fit: cover;
-    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
     width: 100%;
     background-repeat: no-repeat;
 }
@@ -362,6 +387,11 @@ footer p {
             border-right: 5px solid $GreenishCyan;
             img {
                 box-shadow: 10px 10px $GreenishCyan;
+                position: relative;
+                top: -100px;
+            }
+            .articleWrapper {
+                margin-left: 10%;
             }
             h4 {
                 color: $SpruceGreen;
@@ -393,6 +423,7 @@ footer p {
         color: $Black;
     }
     .comments {
+        margin-left: 10%;
         h6 {
             margin: 50px 0;
         }

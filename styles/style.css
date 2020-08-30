@@ -434,10 +434,8 @@ form textarea {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.indexHeader .wrapper {
   position: relative;
+  width: 100%;
 }
 
 .indexHeader .title {
@@ -458,8 +456,6 @@ form textarea {
 }
 
 .indexHeader .titleContainer {
-  width: 100%;
-  height: 100%;
   margin-top: 15%;
   margin-left: 35%;
   position: relative;
@@ -471,7 +467,7 @@ form textarea {
   position: absolute;
   top: 25%;
   z-index: 0;
-  min-width: 600px;
+  min-width: 500px;
 }
 
 .findMore,
@@ -491,7 +487,7 @@ form textarea {
 
 .about {
   background-color: #FAFFFE;
-  padding: 100px 0 75px 0;
+  padding: 300px 0 75px 0;
 }
 
 .about .wrapper {
@@ -525,7 +521,7 @@ form textarea {
 
 .gallery {
   background-color: #D2F9F1;
-  padding: 75px 0;
+  padding: 100px 0;
 }
 
 .gallery ul {
@@ -542,7 +538,7 @@ form textarea {
 }
 
 .info {
-  padding: 50px 0;
+  padding: 75px 0;
 }
 
 .info .topInfo,
@@ -550,6 +546,7 @@ form textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 35px;
 }
 
 .info p {
@@ -585,7 +582,6 @@ h4 {
 
 .planLocation {
   background-color: #D2F9F1;
-  padding: 50px 0;
 }
 
 .planLocation .top,
@@ -603,20 +599,28 @@ h4 {
   width: 50%;
 }
 
+.planLocation .bottomTxtContainer {
+  text-align: right;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
 .planLocation .topImgContainer {
-  padding-right: 20px;
-  padding-bottom: 20px;
+  position: relative;
+  top: -50px;
 }
 
 .planLocation .topImgContainer img {
   -webkit-box-shadow: 10px 10px;
           box-shadow: 10px 10px;
   color: #50E3C2;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .planLocation .bottomImgContainer {
-  padding-left: 20px;
-  padding-top: 20px;
+  position: relative;
+  bottom: -50px;
 }
 
 .planLocation .bottomImgContainer img {
@@ -625,16 +629,33 @@ h4 {
   color: #50E3C2;
 }
 
-.planLocation .topTxtContainer,
+.planLocation .topTxtContainer {
+  padding-right: 10%;
+  padding-left: 10px;
+  padding-top: 65px;
+}
+
 .planLocation .bottomTxtContainer {
-  padding-left: 20px;
+  padding-left: 10%;
+  padding-right: 10px;
+}
+
+.planLocation .topImgContainer,
+.planLocation .bottomTxtContainer {
+  margin-right: 50px;
+}
+
+.planLocation .topTxtContainer,
+.planLocation .bottomImgContainer {
+  margin-left: 50px;
 }
 
 .backgroundBeach {
   background-image: url(../assets/banner-image.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
   width: 100%;
   background-repeat: no-repeat;
 }
@@ -694,6 +715,12 @@ footer p {
 .blogMain .leftSide .blogPost img {
   -webkit-box-shadow: 10px 10px #50E3C2;
           box-shadow: 10px 10px #50E3C2;
+  position: relative;
+  top: -100px;
+}
+
+.blogMain .leftSide .blogPost .articleWrapper {
+  margin-left: 10%;
 }
 
 .blogMain .leftSide .blogPost h4 {
@@ -725,6 +752,10 @@ footer p {
   font-weight: 900;
   letter-spacing: 1px;
   color: #2C2C2C;
+}
+
+.blogMain .comments {
+  margin-left: 10%;
 }
 
 .blogMain .comments h6 {
