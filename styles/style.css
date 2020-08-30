@@ -269,10 +269,6 @@ html {
   overflow: hidden;
 }
 
-ul {
-  margin: 0;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -349,6 +345,15 @@ nav ul {
 nav ul li {
   padding: 10px;
   margin-left: 10px;
+}
+
+nav a {
+  padding: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #063974;
 }
 
 form {
@@ -498,6 +503,17 @@ form textarea {
   color: #FAFFFE;
 }
 
+.findMore:hover,
+.findMore:focus,
+.readMore:hover,
+.readMore:focus,
+.contactSubmit:hover,
+.contactSubmit:focus,
+.postComment:hover,
+.postComment:focus {
+  background-color: #50E3C2;
+}
+
 .about {
   background-color: #FAFFFE;
   padding: 300px 0 75px 0;
@@ -560,6 +576,13 @@ form textarea {
   display: -ms-flexbox;
   display: flex;
   margin-left: 35px;
+}
+
+.info .topInfo a:hover,
+.info .topInfo a:focus,
+.info .bottomInfo a:hover,
+.info .bottomInfo a:focus {
+  color: #063974;
 }
 
 .info p {
@@ -905,6 +928,11 @@ footer p {
   margin-bottom: 150px;
 }
 
+.contactMain .iconInfo a:hover i,
+.contactMain .iconInfo a:focus i {
+  color: #50E3C2;
+}
+
 .contactMain .iconInfo i {
   font-size: 2rem;
   color: #063974;
@@ -1068,7 +1096,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .indexheader nav,
+  .indexHeader nav,
   .blogHeader nav,
   .contactHeader nav {
     -webkit-box-orient: vertical;
@@ -1079,7 +1107,12 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .indexheader nav ul li:first-child,
+  .indexHeader nav ul,
+  .blogHeader nav ul,
+  .contactHeader nav ul {
+    padding-left: 0;
+  }
+  .indexHeader nav ul li:first-child,
   .blogHeader nav ul li:first-child,
   .contactHeader nav ul li:first-child {
     margin-left: 0;

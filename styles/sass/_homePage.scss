@@ -1,3 +1,253 @@
-ul {
-    margin: 0;
+// Index Page, Header Section
+.logo {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    font-style: italic;
+    color: $GreenishCyan;
+    font-size: 3.46rem;
+    padding-top: 10px;
+}
+
+.indexHeader {
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    nav {
+        li:first-child {
+            color: $GreenishCyan;
+        }
+    }
+    .title {
+        font-family: 'Playfair Display SC', serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 11.12rem;
+        color: $TwilightBlue;
+        display: inline;
+    }
+    .indexHeading {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 6.2rem;
+        letter-spacing: 6.7px;
+        color: $SpruceGreen;
+        display: inline;
+    }
+    .titleContainer {
+        margin-top: 15%;
+        margin-left: 35%;
+        position: relative;
+        z-index: 1;
+    }
+    .headerImgContainer {
+        width: 45%;
+        position: absolute;
+        top: 25%;
+        z-index: 0;
+        min-width: 500px;
+    }
+}
+
+// Index About Section
+.findMore,
+.readMore,
+.contactSubmit,
+.postComment {
+    padding: 10px;
+    background-color: $TwilightBlue;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: $IceBlue;
+}
+
+.findMore:hover,
+.findMore:focus,
+.readMore:hover,
+.readMore:focus,
+.contactSubmit:hover,
+.contactSubmit:focus,
+.postComment:hover,
+.postComment:focus {
+    background-color: $GreenishCyan;
+}
+
+.about {
+    background-color: $IceBlue;
+    padding: 300px 0 75px 0;
+    .wrapper {
+        display: flex;
+    }
+    .aboutImgContainer {
+        width: 30%;
+        img {
+            box-shadow: -15px 15px $GreenishCyan;
+        }
+    }
+    .aboutContainer {
+        width: 70%;
+        padding-right: 50px;
+    }
+    h2 {
+        font-family: 'Lato', sans-serif;
+        font-size: 6.2rem;
+        font-weight: bold;
+        line-height: 58px;
+        letter-spacing: 3.8px;
+        color: $SpruceGreen;
+    }
+}
+
+// Gallery Section
+.gallery {
+    background-color: $LightLightBlue;
+    padding: 100px 0;
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    ul li {
+        width: calc((100% / 3) - 20px);
+    }
+}
+
+// Info Section
+.info {
+    padding: 75px 0;
+    .topInfo,
+    .bottomInfo {
+        display: flex;
+        margin-left: 35px;
+        a:hover,
+        a:focus {
+            color: $TwilightBlue;
+        }
+    }
+    p {
+        padding: 15px 30px;
+    }
+    h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 58px;
+        letter-spacing: 3.2px;
+        color: $SpruceGreen;
+        margin-left: -60px;
+        i {
+            color: white;
+            background-color: $GreenishCyan;
+            padding: 15px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+}
+
+// Plan Location Section
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 58px;
+    letter-spacing: 3.8px;
+    color: $TwilightBlue;
+}
+
+.planLocation {
+    background-color: $LightLightBlue;
+    // height: 140vh;
+    // padding: 50px 0;
+    .top,
+    .bottom {
+        width: 100%;
+        display: flex;
+    }
+    .topImgContainer,
+    .bottomImgContainer,
+    .topTxtContainer,
+    .bottomTxtContainer {
+        width: 50%;
+    }
+    .bottomTxtContainer {
+        text-align: right;
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+    .topImgContainer {
+        position: relative;
+        top: -50px;
+        // padding-right: 20px;
+        // padding-bottom: 20px;
+        img {
+            // width: 100%;
+            box-shadow: 10px 10px;
+            color: $GreenishCyan;
+            object-fit: cover;
+        }
+    }
+    .bottomImgContainer {
+        position: relative;
+        bottom: -50px;
+        // padding-left: 20px;
+        // padding-top: 20px;
+        img {
+            box-shadow: -10px 10px;
+            color: $GreenishCyan;
+        }
+    }
+    .topTxtContainer {
+        padding-right: 10%;
+        padding-left: 10px;
+        padding-top: 65px;
+    }
+    .bottomTxtContainer {
+        padding-left: 10%;
+        padding-right: 10px;
+    }
+    .topImgContainer,
+    .bottomTxtContainer {
+        margin-right: 50px;
+    }
+    .topTxtContainer,
+    .bottomImgContainer {
+        margin-left: 50px;
+    }
+}
+
+// Background Beach
+.backgroundBeach {
+    background-image: url(../assets/banner-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+// Free Trip Section
+.freeTrip {
+    text-align: center;
+    padding: 100px;
+    h4 {
+        color: $SpruceGreen;
+    }
+}
+
+// Footer Section
+footer {
+    text-align: center;
+    color: $IceBlue;
+    background-color: $Black;
+}
+
+footer p {
+    margin-bottom: 0;
 }

@@ -1,0 +1,55 @@
+// Contact Page Styles
+// Header
+.contactHeader {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    nav ul li:last-child {
+        color: $GreenishCyan;
+    }
+}
+
+.contactMain {
+    .contact {
+        display: flex;
+        margin-bottom: -20px;
+    }
+    form {
+        position: relative;
+        top: -150px;
+        box-shadow: 10px 10px $GreenishCyan;
+        padding: 50px;
+        z-index: 2;
+        background-color: $IceBlue;
+        margin: 0;
+    }
+    form,
+    .iconInfo {
+        width: 48%
+    }
+    .iconInfo {
+        padding-left: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 150px;
+        a:hover,
+        a:focus {
+            i {
+                color: $GreenishCyan;
+            }
+        }
+        i {
+            font-size: 2rem;
+            color: $TwilightBlue;
+            padding: 5px 10px;
+        }
+        p {
+            margin-bottom: 2px;
+        }
+        .boldEmail {
+            font-weight: 900;
+        }
+    }
+}
