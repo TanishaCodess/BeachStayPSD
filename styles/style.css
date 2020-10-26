@@ -1117,6 +1117,9 @@ footer p {
   .contactHeader nav ul li:first-child {
     margin-left: 0;
   }
+  .about {
+    padding-top: 50px;
+  }
   .about .aboutContainer {
     padding-right: 0;
   }
@@ -1153,6 +1156,9 @@ footer p {
   .freeTrip p {
     font-size: 1.6rem;
   }
+  .blogHeader h1 {
+    margin-top: 150px;
+  }
   .blogMain p {
     font-size: 1.6rem;
   }
@@ -1179,6 +1185,23 @@ footer p {
 
 @media (max-width: 600px) {
   .indexHeader .titleContainer .title {
-    font-size: 5rem;
+    font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  nav ul li {
+    margin: 0;
+    font-size: 1.8rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .blogMain .blogPost img {
+    width: 98%;
   }
 }
